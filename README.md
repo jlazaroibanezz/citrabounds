@@ -9,8 +9,6 @@ The methodology is only explained for the original model, but works similarly fo
 - Once imported all the libraries required in the script, run in your terminal the following command:
 
 ```
-function test() {
-  console.log("notice the blank line before this function?");
-}
+$ python3 graphs_nocitra_FUN.py
 ```
-
+This file calls back the functions in the other present files that run the simulation to obtain the Flux Balance Analysis solutions and all the complementary metrics evaluated in the paper.
