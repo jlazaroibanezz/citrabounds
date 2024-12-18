@@ -54,7 +54,7 @@ This script:
 
 ### 3. Analyze Results
 The following graphs are generated:
-- Cumulative distribution of flux flexibility.
+- Cumulative distribution of flux variability.
 - Number of dormant reactions after applying constraints.
 - Comparison of growth rates and metabolic variability.
 
@@ -69,4 +69,4 @@ The following graphs are generated:
    - Lower and upper bounds are applied to key reactions.
 
 3. **Results Analysis**:
-   - The impact of kinetic constraints is evaluated on dormant reactions and flux flexibility.
+   - The impact of kinetic constraints is evaluated on dormant reactions and flux variability.
