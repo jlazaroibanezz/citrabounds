@@ -70,3 +70,5 @@ The following graphs are generated:
 
 3. **Results Analysis**:
    - The impact of kinetic constraints is evaluated on dormant reactions and flux variability.
+
+  The analysis was conducted with the original ("original" directory) and the citramalate-producing ("citramax" directory) models.
