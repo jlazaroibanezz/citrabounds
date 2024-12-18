@@ -4,17 +4,17 @@ This repository contains code to reproduce simulations related to enhancing the 
 
 ## Repository Contents
 
-1. **`dead_reac_func.py`**: Includes utility functions to:
+1. **`metrics.py`**: Includes utility functions to:
    - Count dormant reactions.
    - Assess uncertainty (flux flexibility) after applying kinetic constraints.
    - Generate cumulative distributions.
 
-2. **`graphs_nocitra_FUN_sup.py`**: Runs simulations and generates visualizations for:
+2. **`graphs_nocitra.py`**: Runs simulations and generates visualizations for:
    - Dormant reactions vs. the number of implemented kinetic constraints.
    - Variability in reaction fluxes.
    - Comparisons between original and kinetically constrained models.
 
-3. **`fba_dead_reac_original_proof_rev2_nocitra_FUNexp.py`**: The core simulation script. It integrates the iML1515 model and applies kinetic constraints based on the the steady state simulation of the kinetic model. It includes functionality for:
+3. **`core_simulation.py`**: The core simulation script. It integrates the iML1515 model and applies kinetic constraints based on the the steady state simulation of the kinetic model. It includes functionality for:
    - Flux Balance Analysis (FBA) optimization.
    - Flux Variability Analysis (FVA).
    - Iterative implementation of kinetic constraints.
@@ -45,11 +45,11 @@ Ensure the metabolic model file (`iML1515.xml`) and kinetic data file (`kinetic_
 ### 2. Main Simulation
 Run the main script to simulate metabolic optimization:
 ```bash
-python3 graphs_nocitra_FUN_sup.py
+python3 graphs_nocitra.py
 ```
 
 This script:
-- Calls simulation functions in `fba_dead_reac_original_proof_rev2_nocitra_FUNexp.py`.
+- Calls simulation functions in `core_simulation.py`.
 - Produces visualizations comparing results between the original and kinetically constrained models.
 
 ### 3. Analyze Results
