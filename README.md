@@ -4,7 +4,7 @@ This repository contains code to reproduce simulations related to enhancing the 
 
 ## Repository Contents
 
-1. **`metrics.py`**: Includes utility functions to:
+1. **`metrics_fun.py`**: Includes utility functions to:
    - Count dormant reactions.
    - Assess uncertainty (flux flexibility) after applying kinetic constraints.
    - Generate cumulative distributions.
