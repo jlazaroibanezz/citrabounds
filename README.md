@@ -14,7 +14,7 @@ This repository contains code to reproduce simulations related to enhancing the 
    - Variability in reaction fluxes.
    - Comparisons between original and kinetically constrained models.
 
-3. **`fba_dead_reac_original_proof_rev2_nocitra_FUNexp.py`**: The core simulation script. It integrates the iML1515 model and applies kinetic constraints based on experimental data. It includes functionality for:
+3. **`fba_dead_reac_original_proof_rev2_nocitra_FUNexp.py`**: The core simulation script. It integrates the iML1515 model and applies kinetic constraints based on the the steady state simulation of the kinetic model. It includes functionality for:
    - Flux Balance Analysis (FBA) optimization.
    - Flux Variability Analysis (FVA).
    - Iterative implementation of kinetic constraints.
