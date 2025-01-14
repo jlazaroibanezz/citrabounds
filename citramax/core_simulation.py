@@ -8,7 +8,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 # %matplotlib inline
-from dead_reac_func import dead_reactions_count, uncertainty, uncertainty_second_part, cumulative_distr
+from metrics_fun import dead_reactions_count, uncertainty, uncertainty_second_part, cumulative_distr
 
 
 xls = pd.ExcelFile(r"kinetic_fluxes.xls")
