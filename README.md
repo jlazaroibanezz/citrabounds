@@ -23,11 +23,12 @@ This repository contains code to reproduce simulations related to enhancing the 
 
 ## Prerequisites
 
-1. **Python Dependencies**:
+1. **Python Requisites**:
    - `cobra`
    - `numpy`
    - `matplotlib`
    - `pandas`
+   - `xlwt`
 
    Install them using:
    ```bash
