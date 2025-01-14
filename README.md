@@ -32,7 +32,7 @@ This repository contains code to reproduce simulations related to enhancing the 
 
    Install them using:
    ```bash
-   pip install cobra numpy matplotlib pandas
+   pip install cobra numpy matplotlib pandas xlwt
    ```
 
 2. **Kinetic Flux File**:
