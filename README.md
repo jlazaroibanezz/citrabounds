@@ -1,6 +1,13 @@
 # CitraBounds
 
-This repository contains code to reproduce simulations related to enhancing the accuracy of genome-scale metabolic models by incorporating kinetic information. The included files and scripts are used to analyze the updated *E. coli* metabolic model, iML1515, evaluating dormant reactions, flux flexibility, and other key parameters.
+This repository contains code to reproduce simulations related to enhancing the accuracy of genome-scale metabolic models by incorporating kinetic information. We parted from a genome-scale and a kinetic model of *E. coli*:
+- The [iML1515](http://bigg.ucsd.edu/models/iML1515) model from BiGG Models is a genome-scale metabolic model of Escherichia coli str. K-12 MG1655. It includes 1516 genes, 2712 reactions, and 1877 metabolites, representing a comprehensive reconstruction of the organism's metabolism. This model serves as a robust tool for simulating metabolic fluxes, predicting growth rates under various conditions, and exploring genetic modifications for biotechnological and research applications.
+- The [E_coli_Millard2016.xml](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005396) model captures the main central carbon pathways and accounts for 68 reactions and 77 metabolites which are located in 3 compartments: environment, periplasm and cytoplasm. The model represents glucose-limited conditions and is expressed as a set of ordinary differential equations.
+
+Both models were modified adding the reactions necessary for citramalate synthesis (see paper "Enhancing Metabolic Models with Kinetic Data]{Enhancing Genome-Scale Metabolic Models with Kinetic Data: Resolving Growth and Citramalate Production Trade-offs in *E. coli*").
+The included files and scripts were used to analyze the updated apply the information of the kinetic model to the genome-scale metabolic model in both situations (original and citramalate-producing scenarios). We evaluated flux metrics such as dormant reactions, flux variability, and other key parameters. 
+
+ Only the steps of the procedure for the non-producing citramalate model (original) are displayed but the same process should be applied for the "citramax" directory.
 
 ## Repository Contents
 
@@ -72,4 +79,3 @@ The following graphs are generated:
 3. **Results Analysis**:
    - The impact of kinetic constraints is evaluated on dormant reactions and flux variability.
 
-The analysis was conducted with the original ("original" directory) and the citramalate-producing ("citramax" directory) models. Only the steps for the non-producing citramalate model are displayed but the same process should be applied for the "citramax" directory.
