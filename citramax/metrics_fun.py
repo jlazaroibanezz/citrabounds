@@ -28,14 +28,15 @@ Parameters:
     
 def uncertainty(minimum, maximum, flexibility):
     for i, j in zip(minimum, maximum):
-        if (i < 0 and j >= 0) or (i >= 0 and j > 0) or (i == 0 and j == 0): 
+        if (i < 0 and j >= 0) or (i >= 0 and j > 0) or (i == 0 and j == 0) or (i < 0 and j < 0): 
             interval_dif = j-i
             flexibility.append(interval_dif)
-            
+
+        '''    
         elif i < 0 and j < 0:
             interval_dif = abs(j-abs(i))
             flexibility.append(interval_dif)
-        
+        '''
 '''
 Function to calculate the number of reactions that reduce and increase their flux range 
 Parameters:
