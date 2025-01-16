@@ -291,7 +291,7 @@ for count, (o, p) in enumerate(zip(l_int, u_int)):
 
 	y1 = less_flex_rxns
 	y2 =  more_flex_rxns
-	print('Here', len(h), len(y1), len(y2))
+	# print('Here', len(h), len(y1), len(y2))
 
 	fig, ax = plt.subplots(figsize=(12,8))
 	# ax.set_xticks(np.arange(len(x)+1)) ###
@@ -329,7 +329,7 @@ for count, (o, p) in enumerate(zip(l_int, u_int)):
 	print(len(flexibility_cumdist))
 	'''
 	flexibility_cumdist.append(flex)
-	print(count)
+	# print(count)
 	
 	if count == 0:
 		flexibility_cumdist_2.append(flex_new)
