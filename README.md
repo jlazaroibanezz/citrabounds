@@ -36,10 +36,11 @@ The included files and scripts were used to analyze the updated apply the inform
    - `matplotlib`
    - `pandas`
    - `xlwt`
+   - `xlrd`
 
    Install them using:
    ```bash
-   pip install cobra numpy matplotlib pandas xlwt
+   pip install cobra numpy matplotlib pandas xlwt xlrd
    ```
 
 2. **Kinetic Flux File**:
