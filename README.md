@@ -22,7 +22,7 @@ The included files and scripts were used to analyze the updated apply the inform
    - Comparisons between original and kinetically constrained models.
    - `graphs_with_citra.py` is utilized in the citramalate-producing scenario.
   
-   The output shows the solutions 
+   The output shows the FBA solutions after the implementation of the kinetic bounds of each of the mapped reactions. Each solution represents a point in the output graphs. 
 
 3. **`core_simulation.py`**: The core simulation script. It integrates the iML1515 model and applies kinetic constraints based on the the steady state simulation of the kinetic model. It includes functionality for:
    - Flux Balance Analysis (FBA) optimization.
