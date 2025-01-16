@@ -75,7 +75,7 @@ The following graphs are generated:
    - A fixed glucose flux is applied as a substrate.
 
 2. **Kinetic Constraints**:
-   - Kinetic fluxes are derived from the kinetic model in `E_coli_Millard2016.xml`.
+   - Kinetic fluxes are derived from the kinetic model in `E_coli_Millard2016.xml` which was simulated until steady state was reached giving the fluxes of `kinetic_fluxes.xls`
    - Lower and upper bounds are applied to key reactions.
 
 3. **Results Analysis**:
