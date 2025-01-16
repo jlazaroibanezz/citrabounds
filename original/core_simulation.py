@@ -1,4 +1,4 @@
-simport cobra
+import cobra
 # import cobra.test
 import xlwt
 from cobra.flux_analysis import flux_variability_analysis
