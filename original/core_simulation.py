@@ -83,7 +83,7 @@ def core_sim(stoich_reactions, g, tkt1_f, tkt2_f, tala_f, l_int =[], u_int=[]):
 
     solution = const_model.optimize()
     solutions.append(solution.objective_value)
-    print(solutions)
+    print('List of solutions after the kinetic bounds of each reaction were implemented: ', solutions)
 
     # FVA simulation
 
@@ -153,8 +153,8 @@ def core_sim(stoich_reactions, g, tkt1_f, tkt2_f, tala_f, l_int =[], u_int=[]):
                     # math.inf	
             solution = const_model.optimize()
             solutions.append(solution.objective_value)
-            print(solutions)
-            print('z flux: ', const_model.reactions.get_by_id(z).flux)
+            print('List of solutions after the kinetic bounds of each reaction were implemented: ', solutions)
+            # print('z flux: ', const_model.reactions.get_by_id(z).flux)
             fva_sim = flux_variability_analysis(const_model, const_model.reactions, fraction_of_optimum=0.999)
             mini = list(fva_sim.minimum)
             maxi = list(fva_sim.maximum)
@@ -191,8 +191,8 @@ def core_sim(stoich_reactions, g, tkt1_f, tkt2_f, tala_f, l_int =[], u_int=[]):
                                 
             solution = const_model.optimize()
             solutions.append(solution.objective_value)
-            print(solutions)
-            print('z flux: ', const_model.reactions.get_by_id(z).flux)
+            print('List of solutions after the kinetic bounds of each reaction were implemented: ', solutions)
+            # print('z flux: ', const_model.reactions.get_by_id(z).flux)
             fva_sim = flux_variability_analysis(const_model, const_model.reactions, fraction_of_optimum=0.999)
             mini = list(fva_sim.minimum)
             maxi = list(fva_sim.maximum)
@@ -207,6 +207,8 @@ def core_sim(stoich_reactions, g, tkt1_f, tkt2_f, tala_f, l_int =[], u_int=[]):
     
     # cumulative_distr(flex, flex_new)
     cdf2 = cumulative_distr(flex, flex_new)
+    
+    '''
     print(cdf2)
     print(solutions)
     print(dead_reac)
@@ -221,6 +223,7 @@ def core_sim(stoich_reactions, g, tkt1_f, tkt2_f, tala_f, l_int =[], u_int=[]):
     print(const_model.reactions.get_by_id('ACONTb').lower_bound)
     # print(const_model.reactions.get_by_id('MDH2').upper_bound)
     # print(const_model.reactions.get_by_id('MDH2').lower_bound)
+    '''
     return solutions, dead_reac, less_flex_rxns, more_flex_rxns, flex, flex_new
     
     
