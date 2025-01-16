@@ -20,13 +20,14 @@ The included files and scripts were used to analyze the updated apply the inform
    - Dormant reactions vs. the number of implemented kinetic constraints.
    - Variability in reaction fluxes.
    - Comparisons between original and kinetically constrained models.
+   - `graphs_with_citra.py` is utilized in the citramalate-producing scenario.
 
 3. **`core_simulation.py`**: The core simulation script. It integrates the iML1515 model and applies kinetic constraints based on the the steady state simulation of the kinetic model. It includes functionality for:
    - Flux Balance Analysis (FBA) optimization.
    - Flux Variability Analysis (FVA).
    - Iterative implementation of kinetic constraints.
 
-4. **Metabolic Model**: The model used is `iML1515.xml`.
+4. **Metabolic Model**: The model used is `iML1515.xml`. Replaced with `iML1515CITRA.xml` in the citramalate-producing scenario.
 
 ## Prerequisites
 
