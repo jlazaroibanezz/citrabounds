@@ -1,6 +1,6 @@
 # CitraBounds
 
-This repository contains code to reproduce simulations related to enhancing the accuracy of genome-scale metabolic models by incorporating kinetic information. We parted from a genome-scale and a kinetic model of *E. coli*:
+This repository contains code to reproduce simulations related to enhancing the accuracy of genome-scale metabolic models by incorporating kinetic information. We started from a genome-scale and a kinetic model of *E. coli*:
 - The [iML1515](http://bigg.ucsd.edu/models/iML1515) model from BiGG Models is a genome-scale metabolic model of Escherichia coli str. K-12 MG1655. It includes 1516 genes, 2712 reactions, and 1877 metabolites, representing a comprehensive reconstruction of the organism's metabolism. This model serves as a robust tool for simulating metabolic fluxes, predicting growth rates under various conditions, and exploring genetic modifications for biotechnological and research applications.
 - The [E_coli_Millard2016.xml](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005396) model captures the main central carbon pathways and accounts for 68 reactions and 77 metabolites which are located in 3 compartments: environment, periplasm and cytoplasm. The model represents glucose-limited conditions and is expressed as a set of ordinary differential equations.
 
